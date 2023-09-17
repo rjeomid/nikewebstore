@@ -1,0 +1,121 @@
+.f {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .license {
+      text-align: center;
+      color: rgb(6, 77, 6);
+      border: 3px solid rgb(128, 0, 53);
+  }
+  /* ===================[ایکون]============= */
+  #ytb {
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 52px;
+      border: 2px solid transparent;
+      color: #a11414;
+      font-size: 25px;
+      transition: 0.3s;
+    }
+    
+    #ytb:hover{
+      border-radius: 50%;
+      border-color: #a11414;
+      box-shadow: 0 0 10px #a11414;
+    }
+    .icon {
+      height: 2rem;
+      width: 2rem;
+    }
+    #tel {
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 52px;
+      border: 2px solid transparent;
+      color: #0d569b;
+      font-size: 25px;
+      transition: 0.3s;
+    }
+    
+    #tel:hover{
+      border-radius: 50%;
+      border-color: #0d569b;
+      box-shadow: 0 0 10px #0d569b;
+    }
+      #ins {
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 52px;
+      border: 2px solid transparent;
+      color: #75065f;
+      font-size: 25px;
+      transition: 0.3s;
+    }
+    
+    #ins:hover{
+      border-radius: 50%;
+      border-color: #75065f;
+      box-shadow: 0 0 10px #75065f;
+    }
+    .ri{
+      border-top: solid 2px rgb(128, 0, 53);
+      width: 25%;
+    }
+    /* ===================[ پایان ایکون]============= */
+  .con{
+      color: rgb(6, 77, 6);
+  }
+  .subscribe {
+    padding: 40px 0;
+    background: #9ED9CCFF;
+    background: -webkit-linear-gradient(to left, rgb(114, 11, 54), #9ED9CCFF);
+    background: linear-gradient(to left, rgb(114, 11, 54), #9ED9CCFF);
+  }
+  
+  .subscribe h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+  }
+  
+  .subs-container form .input-group {
+    padding: 1rem 10rem;
+  }
+  
+  .subscribe .form-control {
+    height: 12px;
+    border: 1px solid rgb(128, 0, 53);
+    border-radius: 0;
+    font-size: 7px;
+    padding-left: 1rem;
+    color: rgb(6, 77, 6);
+  }
+  
+  .subscribe .form-control:focus {
+    -webkit-box-shadow: 0px 2.5px 5px rgb(6, 77, 6);
+    box-shadow: 0px 2.5px 5px rgb(6, 77, 6);
+  }
+  
+  .subscribe .btn {
+    min-height: 10px;
+    border-radius: 0;
+    color: #fff;
+    background: rgb(128, 0, 53);
+    font-size: 7px;
+    padding: 0 1rem;
+  }
+  
+  .subscribe .btn:hover i {
+    color: rgb(6, 77, 6);
+    transition: all 0.50s ease;
+  }
+  
+  /*------ width < 991px ------*/
+  @media only screen and (max-width:991px) {
+    .subs-container form .input-group {
+        padding: 2rem 2rem;
+    }
+  }
+  

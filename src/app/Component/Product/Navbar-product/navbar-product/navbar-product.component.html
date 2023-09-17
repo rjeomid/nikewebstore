@@ -1,0 +1,111 @@
+
+
+<hr>
+<div class="filter-text"><span class="nt">Filters :</span></div>
+<!-- =======================[سوییچ ]================= -->                    
+
+<span class="ft">Only available items :</span>
+<br>
+<br>
+  <div>
+    <label class="toggler-wrapper style-29">
+      <input type="checkbox" >
+      <div class="toggler-slider">
+        <div class="toggler-knob"></div>
+      </div>
+    </label>                
+  </div>
+  <!-- =======================[سوییچ پایان]================= -->                    
+<hr>
+<!-- =======================[ترتیب]================= -->                    
+
+  <span class="ft">Order :</span>
+  <div class="select" tabindex="1">
+    <input class="selectopt tartib" name="test" type="radio" id="opt1" checked>
+    <label for="opt1" class="option"><span class="opt"> Recently</span></label>
+    <input class="selectopt tartib" name="test" type="radio" id="opt2">
+    <label for="opt2" class="option"><span class="opt"> Expensive</span></label>
+    <input class="selectopt tartib" name="test" type="radio" id="opt3">
+    <label for="opt3" class="option"><span class="opt"> Inexpensive</span></label>
+  </div>
+<!-- =======================[ترتیب پایان]================= -->                    
+<hr>
+<!-- =======================[رنگ ]================= -->                    
+<div>
+  <span class="ft">Color :</span>
+  <br>
+  <br>  
+  <div class="item">
+    <div class="checkbox-rect-yellow">
+      <input class="color-i-yellow" type="checkbox" id="checkbox-rect-y" name="check">
+      <label class="color-yellow" for="checkbox-rect-y">Yellow</label>
+    </div>
+  </div>
+  <div class="item">
+    <div class="checkbox-rect-red">
+      <input class="color-i-red" type="checkbox" id="checkbox-rect-r" name="check">
+      <label class="color-red" for="checkbox-rect-r">Red</label>
+    </div>
+  </div>
+  <div class="item">
+    <div class="checkbox-rect-white">
+      <input class="color-i-white" type="checkbox" id="checkbox-rect-w" name="check">
+      <label class="color-white" for="checkbox-rect-w">White</label>
+    </div>
+  </div>
+  <div class="item">
+    <div class="checkbox-rect-Black">
+      <input class="color-i-Black" type="checkbox" id="checkbox-rect-b" name="check">
+      <label class="color-Black" for="checkbox-rect-b">Black</label>
+    </div>
+  </div>                                
+</div>
+<!-- =======================[رنگ پایان]================= -->                       
+<hr>
+<!-- =======================[رنج قیمت]================= -->                    
+<div>
+  <span class="ft">Price range :</span>
+  <br>
+  <br>
+  <input type="number" min="50" max="150" value="50" class="rage-number" id="myRange" [(ngModel)]="value1">
+  <br>
+  <br>
+  <input type="range" min="50" max="150" value="50" class="slider" id="myRange" [(ngModel)]="value1">
+  <br>
+  <br>
+  <span class="ft-rage">Price: from
+    <span class="ft-rage-p">$50</span>
+    <span class="ft-rage"> to</span>
+    <span class="ft-rage-p"> ${{value1 }}</span>
+  </span>
+</div>
+<!-- =======================[رنج پایان]================= -->                    
+<hr>
+<!-- =======================[رادیو]================= -->
+<div>
+  <span class="ft">Currency : </span>
+  <form class="form-radio" action="">
+    <label class="form-control">
+      <input type="radio" name="radio" />
+       Pound
+    </label>                
+    <label class="form-control">
+      <input type="radio" name="radio" checked />
+      Euro
+    </label>
+    <label class="form-control">
+      <input type="radio" name="radio" checked />
+      Dollar
+    </label>
+  </form>                
+  <br>
+</div>
+<!-- =======================[رادیو پایان]================= -->                    
+<p *appAvailableItems="condition" class="unless a">
+    (A) This paragraph is displayed because the condition is false.
+  </p>
+  
+  <p *appAvailableItems="!condition" class="unless b">
+    (B) Although the condition is true,
+    this paragraph is displayed because appUnless is set to false.
+  </p>

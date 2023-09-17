@@ -1,0 +1,184 @@
+.card {
+    position: relative;
+    width: 160px;
+    height: 240px;
+    background: #9ED9CCFF;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(114, 11, 54);
+    transform: skewY(345deg);
+    transition: 0.5s;
+  }
+  
+  .card:hover::before {
+    top: -35%;
+    transform: skewY(390deg);
+  }
+  
+  .card::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 300;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 1;
+  }
+  .card .contentBox {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+  
+  .card .contentBox h3 {
+    font-size: 9px;
+    color: rgb(6, 77, 6);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .card .contentBox .price {
+    font-size: 12px;
+    color: rgb(6, 77, 6);
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .card .contentBox .buy {
+    position: relative;
+    top: 40px;
+    opacity: 0;
+    padding: 4px 10px;
+    margin-top: 5px;
+    color: #9ED9CCFF;
+    text-decoration: none;
+    background: rgb(114, 11, 54);
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+  
+  .card:hover .contentBox .buy {
+    top: 0;
+    opacity: 1;
+  }
+  
+  .mouse {
+    height: 150px;
+    width: auto;
+  }
+  .offer-text{
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      color: rgb(6, 77, 6);
+      
+  }
+  .offer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      /* border-bottom: solid 1px rgb(114, 11, 54);
+      border-top: solid 1px rgb(114, 11, 54); */
+  }
+  .news{
+  color: rgb(6, 77, 6);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  }
+  .mydivider1{
+      border-top: solid 3px rgb(114, 11, 54);
+      width: 25%;
+      float: right;
+  }
+  .mydivider2{
+      border-top: solid 3px rgb(114, 11, 54);
+      width: 12.5%;
+      float: right;
+  }
+  .offert{
+      text-align: right;
+      margin-bottom: 1.5rem;
+  }
+  .mydivider3{
+      border-top: solid 3px rgb(114, 11, 54);
+      width: 25%;
+  }
+  .mydivider4{
+      border-top: solid 3px rgb(114, 11, 54);
+      width: 12.5%;
+  }
+.click{
+color: rgb(114, 11, 54);
+}  
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: rgb(114, 11, 54);
+    height: 2px;
+    color: rgb(6, 77, 6);
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
+
+    h3 {
+      color: rgb(6, 77, 6);
+      margin-bottom: 0;
+    }
+    .ready {
+      background: linear-gradient(rgba(0, 176, 155, 0.8), rgb(114, 11, 54)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQWYOljQQktzMjkrhCjAmOMbEgkkieYrApdg&usqp=CAU") no-repeat fixed center;
+      background-size: cover; }
+    
+    .ready .cta {
+      padding: 5rem;
+      background-color: rgba(158, 217, 204, 0.425); }
+    
+    
+    /*------ animate ------*/  
+    @keyframes animate {
+      0% {
+        box-shadow: 0 0 0 0 rgb(114, 11, 54); }
+      100% {
+        box-shadow: 0 0 0 20px rgb(6, 77, 6); } }
+    
+    

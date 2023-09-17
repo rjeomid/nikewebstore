@@ -1,0 +1,34 @@
+
+<div div class="n container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="search-box">
+          <button class="btn-search"><i class="fas fa-search"></i></button>
+          <input type="text" class="input-search" placeholder="Type to Search...">
+        </div>
+      </div>  
+      <div class="logo col-md-4">
+        <a>
+        <img  class="img-logo" src="https://kadiner.ir/wp-content/uploads/2021/07/A-DTBVG-4095-V-418-768x768.jpg">
+        <br>
+        <span class="website-name" [routerLink]="['/home']">Website Name</span>
+        </a>
+      </div>
+      <!-- ============[ منو]============== -->
+        <div class="menu-nav col-md-4">
+            <details>
+                <summary>            
+                    <i class="fa-solid fa-bars icon-nav"></i>
+                </summary>
+                <nav class="menu">
+                  <a class="hvr-underline-from-left" [routerLink]="['/home']"><i class="icon-tab fa-solid fa-house"></i>Home</a>
+                  <a class="hvr-underline-from-left" [routerLink]="['/login']"><i class="icon-tab fa-solid fa-house-user"></i>House User</a>
+                  <a class="hvr-underline-from-left" [routerLink]="['/bascet-shop']"><i class="icon-tab fa-solid fa-basket-shopping"></i>Basket Shopping</a>
+                  <a class="hvr-underline-from-left" [routerLink]="['/product']"><i class="icon-tab fa-solid fa-store"></i>Product</a>
+                  <a class="hvr-underline-from-left" [routerLink]="['/news']"><i class="icon-tab fa-regular fa-newspaper"></i>News & Blog</a>
+                </nav>
+              </details>            
+          </div>
+            <!-- ============[منو  پایان]============== -->
+    </div>
+  </div>

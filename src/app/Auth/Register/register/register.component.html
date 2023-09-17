@@ -1,0 +1,83 @@
+<div div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-9">
+        <div class="login-box">
+          <h2>Register</h2>
+          <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+            <div class="user-box">
+              <nz-form-item>
+                <nz-form-label [nzSpan]="7" nzRequired></nz-form-label>
+                <nz-form-control [nzSpan]="12" nzHasFeedback nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
+                  <input nz-input formControlName="userName" placeholder=" Username" />
+                  <ng-template #userErrorTpl let-control>
+                    <ng-container *ngIf="control.hasError('required')">Please input your username!</ng-container>
+                    <ng-container *ngIf="control.hasError('duplicated')">The username is redundant!</ng-container>
+                  </ng-template>
+                </nz-form-control>
+              </nz-form-item>  
+            </div>
+            <div class="user-box">
+              <nz-form-item>
+                <nz-form-label [nzSpan]="7" nzRequired></nz-form-label>
+                <nz-form-control [nzSpan]="12" nzHasFeedback [nzErrorTip]="emailErrorTpl">
+                  <input nz-input formControlName="email" placeholder="E-mail" type="email" />
+                  <ng-template #emailErrorTpl let-control>
+                    <ng-container *ngIf="control.hasError('email')">The input is not valid E-mail!</ng-container>
+                    <ng-container *ngIf="control.hasError('required')">Please input your E-mail!</ng-container>
+                  </ng-template>
+                </nz-form-control>
+              </nz-form-item>  
+            </div>
+            <div class="user-box">
+              <nz-form-item>
+                <nz-form-label [nzSpan]="7" nzRequired></nz-form-label>
+                <nz-form-control [nzSpan]="12" nzHasFeedback nzErrorTip="Please input your password!">
+                  <input nz-input placeholder="Password" type="password" formControlName="password" (ngModelChange)="validateConfirmPassword()" />
+                </nz-form-control>
+              </nz-form-item>  
+            </div>
+            <div class="user-box">
+              <nz-form-item>
+                <nz-form-label [nzSpan]="7" nzRequired></nz-form-label>
+                <nz-form-control [nzSpan]="12" nzHasFeedback [nzErrorTip]="passwordErrorTpl">
+                  <input nz-input type="password" formControlName="confirm" placeholder="Confirm Password" />
+                  <ng-template #passwordErrorTpl let-control>
+                    <ng-container *ngIf="control.hasError('required')">Please confirm your password!</ng-container>
+                    <ng-container *ngIf="control.hasError('confirm')">Password is inconsistent!</ng-container>
+                  </ng-template>
+                </nz-form-control>
+              </nz-form-item>  
+            </div>
+            <div>
+              <hr>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Register Now!
+              </a>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+      <!-- ============[ منو]============== -->
+      <div class="menu-nav col-lg-3 col-md-3 col-sm-3">
+        <details>
+            <summary>            
+                <i class="fa-solid fa-bars icon-nav"></i>
+            </summary>
+            <nav class="menu">
+              <a class="hvr-underline-from-left" href="#link"><i class="icon-tab fa-solid fa-house"></i>Home</a>
+              <a class="hvr-underline-from-left" href="#link"><i class="icon-tab fa-solid fa-house-user"></i>House User</a>
+              <a class="hvr-underline-from-left" href="#link"><i class="icon-tab fa-solid fa-basket-shopping"></i>Basket Shopping</a>
+              <a class="hvr-underline-from-left" href="#link"><i class="icon-tab fa-solid fa-store"></i>Product</a>
+              <a class="hvr-underline-from-left" href="#link"><i class="icon-tab fa-regular fa-newspaper"></i>News & Blog</a>
+            </nav>
+          </details>            
+      </div>
+        <!-- ============[منو  پایان]============== -->
+    </div>
+  </div>
+  
